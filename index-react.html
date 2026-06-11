@@ -1,0 +1,160 @@
+<!--
+MIT License
+
+Copyright (c) 2026 oleh Anda (dan kontributor proyek ini)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+-->
+
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Portfolio Template</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        // Konfigurasi Tailwind untuk fitur Dark Mode
+        tailwind.config = {
+            darkMode: 'class',
+        }
+    </script>
+    <!-- Font Keren -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900 dark:bg-slate-900 dark:text-slate-100 transition-colors duration-300">
+
+    <!-- NAVBAR -->
+    <nav class="fixed top-0 left-0 w-full z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-md border-b border-slate-200 dark:border-slate-800">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-xl font-bold tracking-wider text-indigo-600 dark:text-indigo-400">DEV.PORTFOLIO</a>
+            
+            <div class="flex items-center gap-6">
+                <ul class="hidden md:flex gap-6 font-medium text-sm">
+                    <li><a href="#home" class="hover:text-indigo-600 dark:hover:text-indigo-400 transition">Home</a></li>
+                    <li><a href="#projects" class="hover:text-indigo-600 dark:hover:text-indigo-400 transition">Projects</a></li>
+                    <li><a href="#contact" class="hover:text-indigo-600 dark:hover:text-indigo-400 transition">Contact</a></li>
+                </ul>
+                
+                <!-- Tombol Dark Mode -->
+                <button id="theme-toggle" class="p-2 rounded-lg bg-slate-100 dark:bg-slate-800 text-amber-500 dark:text-indigo-400 focus:outline-none">
+                    <!-- Icon Sun (Light) -->
+                    <svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 14.121l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 111.414 1.414zm-.707-11.314a1 1 0 00-1.414 1.414l.707.707a1 1 0 001.414-1.414l-.707-.707zM6 10a1 1 0 01-1-1v1a1 1 0 110-2h1a1 1 0 110 2H6z"></path></svg>
+                    <!-- Icon Moon (Dark) -->
+                    <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="min-h-screen flex items-center justify-center pt-20 px-6">
+        <div class="max-w-4xl text-center" data-aos="zoom-in" data-aos-duration="1000">
+            <span class="px-3 py-1 text-xs font-semibold tracking-wider text-indigo-600 bg-indigo-100 dark:bg-indigo-900/50 dark:text-indigo-300 rounded-full uppercase">Available for Hire</span>
+            <h1 class="text-4xl md:text-6xl font-bold mt-4 tracking-tight">Hi, I'm <span class="text-indigo-600 dark:text-indigo-400">Alex Rivera</span></h1>
+            <p class="text-xl md:text-2xl font-medium mt-2 text-slate-600 dark:text-slate-400">Fresh Graduate & Front-End Developer</p>
+            <p class="mt-6 text-slate-500 max-w-xl mx-auto leading-relaxed dark:text-slate-400">Saya membangun website yang responsif, cepat, dan berfokus pada pengalaman pengguna yang maksimal. Siap berkontribusi dalam proyek luar biasa Anda.</p>
+            <div class="mt-8 flex justify-center gap-4">
+                <a href="#projects" class="px-6 py-3 bg-indigo-600 text-white rounded-xl font-medium hover:bg-indigo-700 transition shadow-lg shadow-indigo-600/20">Lihat Project</a>
+                <a href="#contact" class="px-6 py-3 border border-slate-300 dark:border-slate-700 rounded-xl font-medium hover:bg-slate-100 dark:hover:bg-slate-800 transition">Hubungi Saya</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="py-20 px-6 bg-slate-100 dark:bg-slate-900/50">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl font-bold">Project Pilihan</h2>
+                <p class="text-slate-500 mt-2">Beberapa aplikasi yang telah saya kembangkan baru-baru ini.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-md border border-slate-200 dark:border-slate-700/50" data-aos="fade-up" data-aos-delay="100">
+                    <div class="h-48 bg-gradient-to-r from-blue-500 to-indigo-600 flex items-center justify-center text-white font-bold text-xl">E-Commerce App Platform</div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Toko Online Pintar</h3>
+                        <p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed mb-4">Platform belanja online fungsional yang dilengkapi keranjang belanja dan kalkulasi harga otomatis.</p>
+                        <div class="flex gap-2 mb-6"><span class="px-2 py-1 bg-slate-100 dark:bg-slate-700 text-xs rounded">Tailwind</span><span class="px-2 py-1 bg-slate-100 dark:bg-slate-700 text-xs rounded">JavaScript</span></div>
+                        <a href="#" class="text-sm font-semibold text-indigo-600 dark:text-indigo-400 hover:underline">Lihat Detail &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-md border border-slate-200 dark:border-slate-700/50" data-aos="fade-up" data-aos-delay="200">
+                    <div class="h-48 bg-gradient-to-r from-purple-500 to-pink-600 flex items-center justify-center text-white font-bold text-xl">Task Management Dashboard</div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Aplikasi Produktivitas</h3>
+                        <p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed mb-4">Dashboard interaktif untuk mengatur tugas harian, deadline, dan mencatat progres pekerjaan.</p>
+                        <div class="flex gap-2 mb-6"><span class="px-2 py-1 bg-slate-100 dark:bg-slate-700 text-xs rounded">HTML5</span><span class="px-2 py-1 bg-slate-100 dark:bg-slate-700 text-xs rounded">Tailwind CSS</span></div>
+                        <a href="#" class="text-sm font-semibold text-indigo-600 dark:text-indigo-400 hover:underline">Lihat Detail &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="py-20 px-6">
+        <div class="max-w-md mx-auto">
+            <div class="text-center mb-10" data-aos="fade-up">
+                <h2 class="text-3xl font-bold">Mari Berdiskusi</h2>
+                <p class="text-slate-500 mt-2">Punya proyek menarik? Kirim pesan sekarang.</p>
+            </div>
+
+            <!-- Form Menggunakan Formspree (Gratis, langsung bisa kirim email tanpa backend) -->
+            <form action="https://formspree.io/f/your_endpoint_here" method="POST" class="space-y-5" data-aos="fade-up" data-aos-delay="100">
+                <div>
+                    <label class="block text-sm font-medium mb-2">Nama Anda</label>
+                    <input type="text" name="name" required class="w-full px-4 py-3 rounded-xl bg-slate-100 dark:bg-slate-800 border-none focus:ring-2 focus:ring-indigo-500 outline-none transition">
+                </div>
+                <div>
+                    <label class="block text-sm font-medium mb-2">Email</label>
+                    <input type="email" name="email" required class="w-full px-4 py-3 rounded-xl bg-slate-100 dark:bg-slate-800 border-none focus:ring-2 focus:ring-indigo-500 outline-none transition">
+                </div>
+                <div>
+                    <label class="block text-sm font-medium mb-2">Pesan</label>
+                    <textarea name="message" rows="4" required class="w-full px-4 py-3 rounded-xl bg-slate-100 dark:bg-slate-800 border-none focus:ring-2 focus:ring-indigo-500 outline-none transition"></textarea>
+                </div>
+                <button type="submit" class="w-full py-3 bg-indigo-600 text-white font-medium rounded-xl hover:bg-indigo-700 transition shadow-lg shadow-indigo-600/10">Kirim Pesan</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-8 border-t border-slate-200 dark:border-slate-800 text-center text-sm text-slate-500">
+        <p>&copy; 2026 DevPortfolio. Licensed under MIT.</p>
+    </footer>
+
+    <!-- AOS Animation Script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ once: true }); // Inisialisasi animasi sekali jalan saat scroll
+    </script>
+    <!-- Logika Dark Mode & Interaktif -->
+    <script src="app.js"></script>
+</body>
+</html>
