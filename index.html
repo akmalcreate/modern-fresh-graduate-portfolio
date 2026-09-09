@@ -1,7 +1,7 @@
 <!--
 MIT License
 
-Copyright (c) 2026 oleh Anda (dan kontributor proyek ini)
+Copyright (c) 2026 oleh Moch Akmal Almagribi
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -27,7 +27,7 @@ SOFTWARE.
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Portfolio Template</title>
+    <title>Moch Akmal Almagribi - Portfolio</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -73,9 +73,9 @@ SOFTWARE.
     <section id="home" class="min-h-screen flex items-center justify-center pt-20 px-6">
         <div class="max-w-4xl text-center" data-aos="zoom-in" data-aos-duration="1000">
             <span class="px-3 py-1 text-xs font-semibold tracking-wider text-indigo-600 bg-indigo-100 dark:bg-indigo-900/50 dark:text-indigo-300 rounded-full uppercase">Available for Hire</span>
-            <h1 class="text-4xl md:text-6xl font-bold mt-4 tracking-tight">Hi, I'm <span class="text-indigo-600 dark:text-indigo-400">Alex Rivera</span></h1>
-            <p class="text-xl md:text-2xl font-medium mt-2 text-slate-600 dark:text-slate-400">Fresh Graduate & Front-End Developer</p>
-            <p class="mt-6 text-slate-500 max-w-xl mx-auto leading-relaxed dark:text-slate-400">Saya membangun website yang responsif, cepat, dan berfokus pada pengalaman pengguna yang maksimal. Siap berkontribusi dalam proyek luar biasa Anda.</p>
+            <h1 class="text-4xl md:text-6xl font-bold mt-4 tracking-tight">Hi, I'm <span class="text-indigo-600 dark:text-indigo-400">Moch Akmal Almagribi</span></h1>
+            <p class="text-xl md:text-2xl font-medium mt-2 text-slate-600 dark:text-slate-400">Software Engineer & Developer</p>
+            <p class="mt-6 text-slate-500 max-w-xl mx-auto leading-relaxed dark:text-slate-400">Saya membangun aplikasi berbasis Computer Vision dan AI yang responsif, cerdas, dan fungsional. Siap berkontribusi dalam proyek luar biasa Anda.</p>
             <div class="mt-8 flex justify-center gap-4">
                 <a href="#projects" class="px-6 py-3 bg-indigo-600 text-white rounded-xl font-medium hover:bg-indigo-700 transition shadow-lg shadow-indigo-600/20">Lihat Project</a>
                 <a href="#contact" class="px-6 py-3 border border-slate-300 dark:border-slate-700 rounded-xl font-medium hover:bg-slate-100 dark:hover:bg-slate-800 transition">Hubungi Saya</a>
@@ -88,29 +88,64 @@ SOFTWARE.
         <div class="max-w-6xl mx-auto">
             <div class="text-center mb-16" data-aos="fade-up">
                 <h2 class="text-3xl font-bold">Project Pilihan</h2>
-                <p class="text-slate-500 mt-2">Beberapa aplikasi yang telah saya kembangkan baru-baru ini.</p>
+                <p class="text-slate-500 mt-2">Demonstrasi proyek Computer Vision dan AI yang telah dikembangkan.</p>
             </div>
 
-            <div class="grid md:grid-cols-2 gap-8">
-                <!-- Card 1 -->
-                <div class="bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-md border border-slate-200 dark:border-slate-700/50" data-aos="fade-up" data-aos-delay="100">
-                    <div class="h-48 bg-gradient-to-r from-blue-500 to-indigo-600 flex items-center justify-center text-white font-bold text-xl">E-Commerce App Platform</div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2">Toko Online Pintar</h3>
-                        <p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed mb-4">Platform belanja online fungsional yang dilengkapi keranjang belanja dan kalkulasi harga otomatis.</p>
-                        <div class="flex gap-2 mb-6"><span class="px-2 py-1 bg-slate-100 dark:bg-slate-700 text-xs rounded">Tailwind</span><span class="px-2 py-1 bg-slate-100 dark:bg-slate-700 text-xs rounded">JavaScript</span></div>
-                        <a href="#" class="text-sm font-semibold text-indigo-600 dark:text-indigo-400 hover:underline">Lihat Detail &rarr;</a>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Card 1: Hand Gesture Shape Recognition -->
+                <div class="bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-md border border-slate-200 dark:border-slate-700/50 flex flex-col justify-between" data-aos="fade-up" data-aos-delay="100">
+                    <div>
+                        <div class="relative w-full h-48 bg-black">
+                            <video class="w-full h-full object-cover" controls controlsList="nodownload" oncontextmenu="return false;">
+                                <source src="Hand Gesture.mp4" type="video/mp4">
+                                Browser Anda tidak mendukung tag video.
+                            </video>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">Hand Gesture Shape Recognition</h3>
+                            <p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed mb-4">Sistem pengenalan bentuk geometris dan pola interaktif berbasis gestur tangan secara real-time.</p>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6">
+                        <div class="flex gap-2"><span class="px-2 py-1 bg-slate-100 dark:bg-slate-700 text-xs rounded">Python</span><span class="px-2 py-1 bg-slate-100 dark:bg-slate-700 text-xs rounded">OpenCV</span><span class="px-2 py-1 bg-slate-100 dark:bg-slate-700 text-xs rounded">MediaPipe</span></div>
                     </div>
                 </div>
 
-                <!-- Card 2 -->
-                <div class="bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-md border border-slate-200 dark:border-slate-700/50" data-aos="fade-up" data-aos-delay="200">
-                    <div class="h-48 bg-gradient-to-r from-purple-500 to-pink-600 flex items-center justify-center text-white font-bold text-xl">Task Management Dashboard</div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2">Aplikasi Produktivitas</h3>
-                        <p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed mb-4">Dashboard interaktif untuk mengatur tugas harian, deadline, dan mencatat progres pekerjaan.</p>
-                        <div class="flex gap-2 mb-6"><span class="px-2 py-1 bg-slate-100 dark:bg-slate-700 text-xs rounded">HTML5</span><span class="px-2 py-1 bg-slate-100 dark:bg-slate-700 text-xs rounded">Tailwind CSS</span></div>
-                        <a href="#" class="text-sm font-semibold text-indigo-600 dark:text-indigo-400 hover:underline">Lihat Detail &rarr;</a>
+                <!-- Card 2: Driver Drowsiness Detection System -->
+                <div class="bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-md border border-slate-200 dark:border-slate-700/50 flex flex-col justify-between" data-aos="fade-up" data-aos-delay="200">
+                    <div>
+                        <div class="relative w-full h-48 bg-black">
+                            <video class="w-full h-full object-cover" controls controlsList="nodownload" oncontextmenu="return false;">
+                                <source src="Driver Drowsiness Detection System.mp4" type="video/mp4">
+                                Browser Anda tidak mendukung tag video.
+                            </video>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">Driver Drowsiness Detection System</h3>
+                            <p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed mb-4">Sistem pendeteksi kantuk pengemudi yang memantau tingkat kedipan mata dan posisi kepala untuk memberikan peringatan dini.</p>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6">
+                        <div class="flex gap-2"><span class="px-2 py-1 bg-slate-100 dark:bg-slate-700 text-xs rounded">Python</span><span class="px-2 py-1 bg-slate-100 dark:bg-slate-700 text-xs rounded">OpenCV</span><span class="px-2 py-1 bg-slate-100 dark:bg-slate-700 text-xs rounded">Dlib</span></div>
+                    </div>
+                </div>
+
+                <!-- Card 3: Object Detection and Alert System -->
+                <div class="bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-md border border-slate-200 dark:border-slate-700/50 flex flex-col justify-between" data-aos="fade-up" data-aos-delay="300">
+                    <div>
+                        <div class="relative w-full h-48 bg-black">
+                            <video class="w-full h-full object-cover" controls controlsList="nodownload" oncontextmenu="return false;">
+                                <source src="Object Detection and Alert System.mp4" type="video/mp4">
+                                Browser Anda tidak mendukung tag video.
+                            </video>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">Object Detection and Alert System</h3>
+                            <p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed mb-4">Sistem deteksi objek otomatis yang memberikan notifikasi peringatan saat mendeteksi objek atau kondisi tertentu.</p>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6">
+                        <div class="flex gap-2"><span class="px-2 py-1 bg-slate-100 dark:bg-slate-700 text-xs rounded">YOLO</span><span class="px-2 py-1 bg-slate-100 dark:bg-slate-700 text-xs rounded">Python</span><span class="px-2 py-1 bg-slate-100 dark:bg-slate-700 text-xs rounded">OpenCV</span></div>
                     </div>
                 </div>
             </div>
@@ -125,7 +160,7 @@ SOFTWARE.
                 <p class="text-slate-500 mt-2">Punya proyek menarik? Kirim pesan sekarang.</p>
             </div>
 
-            <!-- Form Menggunakan Formspree (Gratis, langsung bisa kirim email tanpa backend) -->
+            <!-- Form Menggunakan Formspree -->
             <form action="https://formspree.io/f/your_endpoint_here" method="POST" class="space-y-5" data-aos="fade-up" data-aos-delay="100">
                 <div>
                     <label class="block text-sm font-medium mb-2">Nama Anda</label>
@@ -146,15 +181,16 @@ SOFTWARE.
 
     <!-- FOOTER -->
     <footer class="py-8 border-t border-slate-200 dark:border-slate-800 text-center text-sm text-slate-500">
-        <p>&copy; 2026 DevPortfolio. Licensed under MIT.</p>
+        <p>&copy; 2026 Moch Akmal Almagribi. Licensed under MIT.</p>
     </footer>
 
     <!-- AOS Animation Script -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        AOS.init({ once: true }); // Inisialisasi animasi sekali jalan saat scroll
+        AOS.init({ once: true });
     </script>
     <!-- Logika Dark Mode & Interaktif -->
     <script src="app.js"></script>
 </body>
-</html>
+            </html>
+                        
